@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  background-color: #06060a;
+  color: #ece8df;
+}
+
+a:focus-visible,
+button:focus-visible,
+select:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+[role="button"]:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid #e2c46c;
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+body {
+  font-family: var(--font-sans), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background-image: radial-gradient(
+      circle at 15% -10%,
+      rgba(212, 175, 55, 0.12),
+      transparent 45%
+    ),
+    radial-gradient(circle at 85% 5%, rgba(120, 80, 200, 0.1), transparent 40%);
+  background-attachment: fixed;
+}
+
+@layer components {
+  .container-x {
+    @apply mx-auto w-full max-w-6xl px-5 sm:px-8;
+  }
+
+  .text-gradient-gold {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(
+      100deg,
+      #f5e9c8 0%,
+      #d4af37 35%,
+      #f5e9c8 50%,
+      #d4af37 65%,
+      #f5e9c8 100%
+    );
+    background-size: 200% auto;
+  }
+
+  .glass {
+    @apply border border-white/10 bg-white/[0.04] backdrop-blur-md;
+  }
+
+  .btn-gold {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-gold-400 px-6 py-3 text-sm font-semibold tracking-wide text-ink-950 transition-all duration-300 hover:bg-gold-300 hover:shadow-[0_0_30px_-4px_rgba(212,175,55,0.6)] focus:outline-none focus-visible:ring-2 focus-visible:ring-gold-300;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-gold-400/40 px-6 py-3 text-sm font-semibold tracking-wide text-gold-200 transition-all duration-300 hover:border-gold-300 hover:bg-gold-400/10 focus:outline-none focus-visible:ring-2 focus-visible:ring-gold-300;
+  }
+
+  .eyebrow {
+    @apply text-xs font-semibold uppercase tracking-[0.25em] text-gold-400/90;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0a12;
+}
+::-webkit-scrollbar-thumb {
+  background: #262638;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3a3a52;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
