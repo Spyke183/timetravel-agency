@@ -54,6 +54,18 @@ export default function DestinationPage({
           alt={`${dest.name} — ${dest.era}`}
           className="absolute inset-0 h-full w-full object-cover opacity-80"
         />
+        {dest.video && (
+          <video
+            className="absolute inset-0 h-full w-full object-cover opacity-80"
+            autoPlay
+            muted
+            loop
+            playsInline
+            poster={dest.image}
+          >
+            <source src={dest.video} type="video/mp4" />
+          </video>
+        )}
         <div className="absolute inset-0 bg-gradient-to-t from-ink-950 via-ink-950/50 to-ink-950/30" />
 
         <div className="container-x relative z-10 pb-14 pt-28">
