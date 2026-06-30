@@ -7,7 +7,7 @@ import Chatbot from "@/components/Chatbot";
 import MotionProvider from "@/components/MotionProvider";
 
 const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL || "https://timetravel-agency.vercel.app";
+  process.env.NEXT_PUBLIC_SITE_URL || "https://timetravel-agency-woad.vercel.app";
 
 const playfair = Playfair_Display({
   subsets: ["latin"],

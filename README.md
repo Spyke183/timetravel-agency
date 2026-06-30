@@ -14,8 +14,8 @@
 - Torea Tinorua
 
 ### 🔗 Liens
-- **Webapp déployée :** _https://VOTRE-PROJET.vercel.app_ (à compléter après déploiement)
-- **Dépôt GitHub :** _https://github.com/VOTRE-COMPTE/timetravel-agency_ (à compléter)
+- **Webapp déployée :** https://timetravel-agency-woad.vercel.app
+- **Dépôt GitHub :** https://github.com/Spyke183/timetravel-agency
 
 ---
 

@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-const BASE = process.env.NEXT_PUBLIC_SITE_URL || "https://timetravel-agency.vercel.app";
+const BASE = process.env.NEXT_PUBLIC_SITE_URL || "https://timetravel-agency-woad.vercel.app";
 
 export default function robots(): MetadataRoute.Robots {
   return {
