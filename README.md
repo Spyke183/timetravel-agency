@@ -6,8 +6,6 @@
 **Projet final — Supervisé IA — Ynov Campus M1/M2**
 
 ### 👥 Membres du groupe
-> ⚠️ **À COMPLÉTER avant le rendu** (obligatoire sur tous les livrables — sinon note de zéro).
-> Mettez aussi ces noms dans `components/Footer.tsx` (constante `GROUP_MEMBERS`).
 
 - Ugo Ameslant
 - Thomas Barrault
